@@ -34,15 +34,14 @@ body {
     width: 100%;
     height: 100%;
     background: #131212;
-    transition: 0.5s ease;
+    opacity: 90%;
+
 
 
 }
 
 
-.showmenu:hover {
-    opacity: 0.9;
-}
+
 
 
 .showmenu img {
@@ -167,6 +166,8 @@ nav .pedir-ahora:hover {
     opacity: 0;
     transition: opacity 2s ease;
 }
+
+
 
 .left-position {
     width: 45%;
@@ -328,6 +329,8 @@ footer p {
     .showmenu img {
         margin: 20px 0px 20px 300px;
     }
+
+
 
 
 
