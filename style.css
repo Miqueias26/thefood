@@ -10,112 +10,24 @@
 }
 
 body {
-    background-image: url(imagens/pexels-daniel-reche-718241-3616956.jpg);
+    background-color: black;
+    cursor: url(imagens/duplo-click.png), auto;
+    background-image: url(imagens/wallpaperflare.com_wallpaper.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    cursor: url(imagens/duplo-click.png), auto;
-
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
 }
 
-
-.showmenu {
-    display: none;
-    align-self: center;
-    align-content: center;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0 200px 0;
-    width: 100%;
-    height: 100%;
-    background: #131212;
-    opacity: 90%;
-
-
-
-}
-
-
-
-
-
-.showmenu img {
-
-    background-color: #27b92f;
-    text-align: center;
-    width: 50px;
-    border-radius: 50%;
-    margin: 20px 0 20px 1100px;
-}
-
-.showmenu img:hover {
-    background-color: #000000;
-    border: 2px solid #d6d5d5;
-}
-
-.showmenu ul {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    text-align: center;
-
-}
-
-.showmenu ul li a {
-    color: #fff;
-    font-size: 26px;
-    font-weight: 500;
-    text-align: center;
-    text-decoration: none;
-
-}
-
-.showmenu ul li a:hover {
-    color: #27b92f;
-
-}
-
-.showmenu ul li:hover {
-    color: #dcdfdb;
-    transition: .3s ease-in-out all;
-    transform: scale(1.1);
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
-
-.showmenu button {
-    border: none;
-    border-radius: 10px;
-    padding: 12px 40px;
-    color: #27b92f;
-}
-
-.showmenu button:hover {
-    background-color: #27b92f;
-    color: white;
-}
-
-nav .menu img {
-
-    width: 40px;
-}
-
-
-
-
-/* Navegação */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 10px 40px;
     background-color: rgba(30, 29, 29, 0.616);
-
 }
 
 nav img {
@@ -123,11 +35,10 @@ nav img {
 }
 
 nav a {
-
     text-decoration: none;
     font-size: 18px;
     color: #ffffff;
-    margin: 27px;
+    margin: 0 15px;
     transition: color 0.2s ease, border-bottom 0.2s ease;
     opacity: 0;
     transition: opacity 2s ease;
@@ -151,57 +62,184 @@ nav .pedir-ahora {
 
 nav .pedir-ahora:hover {
     background-color: #ffffff;
+    color: #19221a;
+}
+
+/* Menu Responsivo */
+.showmenu {
+    display: none;
+    align-self: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    background: #131212;
+    opacity: 90%;
+}
+
+.showmenu img {
+    background-color: #27b92f;
+    text-align: center;
+    width: 50px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.showmenu img:hover {
+    background-color: #000000;
+    border: 2px solid #d6d5d5;
+}
+
+.showmenu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.showmenu ul li a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.showmenu ul li a:hover {
     color: #27b92f;
 }
 
+.showmenu ul li:hover {
+    color: #dcdfdb;
+    transition: .3s ease-in-out all;
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.showmenu button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 40px;
+    color: #27b92f;
+}
+
+.showmenu button:hover {
+    background-color: #27b92f;
+    color: white;
+}
+
+.menu img {
+    width: 40px;
+}
 
 /* Seção principal */
 .container {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    align-items: baseline;
     padding: 20px;
-    margin: 20px 0;
-    opacity: 0;
-    transition: opacity 2s ease;
 }
 
-
-
-.left-position {
+.left1 {
     width: 45%;
-    padding: 10px;
+    background-color: #1f1f1fc4;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.left1 img {
+    width: 150px;
+    height: auto;
+    position: relative;
+    animation: moverFrenteAtras 3s infinite alternate ease-in-out;
+}
+
+@keyframes moverFrenteAtras {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+.left1 a {
+    display: inline-block;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #60c823;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    margin-top: 15px;
+}
+
+.right1 {
+    width: 45%;
+    padding: 20px;
     color: #e8e6e6;
     font-size: 18px;
-
+    box-sizing: border-box;
+    overflow: auto;
+    margin: 10px;
 }
 
-.right-position {
-    width: 45%;
-    padding: 10px;
-    color: #f4f4f4;
-    font-size: 25px;
-    font-weight: bold;
+.right1 i {
+    display: flex;
+    font-style: normal;
     text-align: center;
-    line-height: 2.0;
-
-
+    align-items: center;
+    justify-content: flex-start;
+    color: #d8e2d9;
+    margin-top: 10px;
 }
 
+#articulos,
+#precio,
+#delivery {
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
 
+#total {
+    font-style: italic;
+    font-weight: bold;
+}
 
+#textright2 {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    color: #d8e2d9;
+}
 
-.right-position h2 {
-    font-size: 30px;
-    color: rgb(39, 185, 47);
+.left-position .ingredientes {
+    color: rgb(253, 253, 253);
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
 }
 
 /* Formulário */
 #form-oficial {
     padding: 30px;
-    background-color: #073d2a75;
+    margin: 20px;
+    background-color: #02020275;
     border-radius: 10px;
+    text-align: center;
 }
 
 .formulario-order {
@@ -209,7 +247,6 @@ nav .pedir-ahora:hover {
     text-align: center;
     color: white;
     overflow-y: auto;
-
 }
 
 .formulario-order p {
@@ -217,41 +254,89 @@ nav .pedir-ahora:hover {
     color: green;
     font-size: 20px;
     border-radius: 5px;
-    margin-bottom: 10px;
-    margin: 20px 40px;
+    margin: 10px 0;
 }
 
 .formulario-order input {
-    margin-top: 10px;
-    margin-bottom: 20px;
-
+    margin: 10px 0;
 }
 
+i {
+    color: black;
+}
 
+#articulos {
+    color: #000000;
+}
 
-#enviar-pedido {
+#botaobots {
     border: none;
     padding: 8px 15px;
     border-radius: 8px;
-    color: white;
-    background-color: #000000;
+    color: green;
+    background-color: #ffffffd9;
     transition: 0.3s ease, color 0.3s ease;
 }
 
-#enviar-pedido:hover {
-    background-color: white;
-    color: green;
+#botaobots:hover {
+    background-color: rgb(13, 14, 14);
+    color: rgb(26, 165, 26);
 }
 
-/* Rodapé */
+#errorCheckBoxNull,
+#error2 {
+    display: block;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    opacity: 90%;
+    margin: 10px 0;
+}
+
+#qtdinside {
+    text-align: center;
+    margin: 5%;
+    border-radius: 50%;
+    padding: 7px 18px;
+    background-color: #f6f6f6f1;
+    color: rgb(62, 116, 65);
+    box-shadow: #0b0e0c;
+}
+
+input {
+    border-radius: 2px;
+    border: none;
+    color: #0f100f;
+}
+
+::placeholder {
+    color: rgb(74, 109, 74);
+    background-color: #f8f8f8;
+}
+
+#continuar-en-whatsapp {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 165, 26);
+    transition: 0.3s ease, color 0.3s ease;
+}
+
+#continuar-en-whatsapp:hover {
+    background-color: rgb(13, 14, 14);
+    color: rgb(26, 165, 26);
+}
+
 .footer-real {
     margin-top: 10px;
+    padding: 20px;
 }
 
 footer {
     background-color: rgba(30, 29, 29, 0.73);
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -266,7 +351,7 @@ footer p {
 
 .footer-links a {
     color: #fff;
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
     font-size: 14px;
 }
@@ -276,7 +361,7 @@ footer p {
 }
 
 .social-icons {
-    margin: 3px 0;
+    margin: 10px 0;
 }
 
 .social-icons .social-icon {
@@ -292,46 +377,122 @@ footer p {
     color: #27b92f;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* Ajustes para dispositivos móveis */
 
-    .container,
-    .container2 {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 992px) {
+    body {
+        font-size: 14px;
     }
 
+    nav {
+        padding: 10px;
+    }
 
+    .container {
+        padding: 10px;
+    }
 
-    .left-position,
-    .right-position,
-    .container2-left,
-    .container2-right {
-        width: 100%;
+    .left1,
+    .right1 {
         margin-bottom: 20px;
+    }
 
+    .showmenu ul {
+        gap: 20px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 13px;
+    }
+
+    .container {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left1,
+    .right1 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .left-position {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .right-position {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .footer-links a {
+        margin: 5px;
+        font-size: 12px;
     }
 }
 
 @media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .left-position {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer {
+        padding: 10px;
+    }
 
     .footer-links a {
         display: block;
+        margin: 5px 0;
+        font-size: 12px;
     }
 
-    .social-icons,
-    .social-icon {
-        display: flex;
-        justify-content: center;
-
+    .social-icons .social-icon {
+        font-size: 20px;
     }
 
     .showmenu img {
-        margin: 20px 0px 20px 300px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 11px;
     }
 
+    .footer-links a {
+        font-size: 10px;
+    }
 
-
-
-
+    .social-icons .social-icon {
+        font-size: 18px;
+    }
 }

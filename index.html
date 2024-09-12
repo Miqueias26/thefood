@@ -24,137 +24,196 @@
         <div class="showmenu">
             <img src="imagens/close.png" alt="closemenu" onclick="ocultarmenu()">
             <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Menu</a>
-                </li>
-                <li>
-                    <a href="#">Delivery</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-                <li>
-                    <button class="pedir-ahora">WhatsApp </button>
-
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><button class="pedir-ahora">WhatsApp</button></li>
             </ul>
         </div>
-
     </header>
 
-    <!-- Seção principal com texto e carrossel -->
     <section class="container">
-        <div class="left-position">
+        <div class="left1">
+            <img src="imagens/imagem3d-Photoroom.png" alt="" width="200px" id="imgt">
+            <p id="textright2">Haz tu pedido ahora y te lo llevamos a donde estés.</p>
+            <a href="#">Fast Delivery</a>
+        </div>
+
+        <div class="right1">
             <form action="delivery" method="get" id="form-oficial" onsubmit="ssd(event)">
                 <h2>Hacer Pedido</h2>
                 <div class="formulario-order">
-                    <p>Seleccione su opción:</p>
+                    <hr>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="option" value="hamburguesa"
+                        <input class="form-check-input" type="checkbox" name="option" value="La Baconita"
                             id="hamburguesa">
                         <label class="form-check-label" for="hamburguesa">
-                            Hamburguesa -- 1,90€
+                            <h5>La Baconita</h5>
                         </label>
+                        <br>
+                        <img src="imagens/hamb11.png" alt="reloadpage" width="100px">
+                        <i class="ingredientes">Hamburguesa, bacon ahumado y queso</i>
                     </div>
                     <hr>
-
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="option" value="mozzarella" id="mozzarella"
+                        <input class="form-check-input" type="checkbox" name="option" value="X-Todo" id="mozzarella"
                             checked>
                         <label class="form-check-label" for="mozzarella">
-                            Mozzarella -- 2,30€
+                            <h5>X-Todo</h5>
                         </label>
+                        <br>
+                        <img src="imagens/hamb12.png" alt="reloadpage" width="100px">
+                        <i class="ingredientes">Hamburguesa, huevo, bacon ahumado y queso</i>
                     </div>
                     <hr>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="option" value="cheddar" id="cheddar"
+                        <input class="form-check-input" type="checkbox" name="option" value="La Suprema" id="cheddar"
                             checked>
                         <label class="form-check-label" for="cheddar">
-                            Cheddar -- 2,90€
+                            <h5>La Suprema</h5>
                         </label>
+                        <br>
+                        <img src="imagens/hamb11.png" alt="reloadpage" width="100px">
+                        <i class="ingredientes">Hamburguesa, cheddard, huevo y ensalda</i>
                     </div>
                     <hr>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="option" value="bacon" id="bacon" checked>
-                        <label class="form-check-label" for="bacon">
-                            Bacon -- 3,00€
-                        </label>
-                    </div>
-                    <hr>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="option" value="ensalada" id="ensalda"
+                        <input class="form-check-input" type="checkbox" name="option" value="Furiosa" id="Furiosa"
                             checked>
-                        <label class="form-check-label" for="ensalda">
-                            Ensalada -- 1,50€
+                        <label class="form-check-label" for="Furiosa">
+                            <h5>Furiosa</h5>
                         </label>
-                        <hr>
-                        <i>Precio :</i> <i id="preço"> adicionarr java script aqui </i>
                         <br>
-                        <i>Delivery :</i> <i id="delivery"> adicionarr java script aqui </i>
-                        <br>
-                        <i>Total a Pagar: <i id="total"></i> </i>
-                        <br>
-                        <input type="submit" id="enviar-pedido" value="Continuar" onclick="ssd()">
+                        <img src="imagens/hamb12.png" alt="reloadpage" width="100px">
+                        <i class="ingredientes">Hamburguesa, Cansalda y chorizzo picante</i>
                     </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="option" value="Gold Star" id="ensalada"
+                            checked>
+                        <label class="form-check-label" for="ensalada">
+                            <h5>Gold Star</h5>
+                        </label>
+                        <br>
+                        <img src="imagens/hamb11.png" alt="reloadpage" width="100px">
+                        <i class="ingredientes">Hamburguesa, cream cheesse y ensalada</i>
+                    </div>
+                    <hr>
+                    <h4>Selecciona tu Refresco</h4>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="option" value="Coca-Cola 300ml"
+                            id="cocacola" checked>
+                        <label class="form-check-label" for="cocacola">
+                            <h5>Coca-Cola</h5>
+                        </label>
+                        <br>
+                        <img src="imagens/lata-coca-cola-Photoroom.png" alt="reloadpage" width="100px">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="option" value="Pepsi 300ml" id="pepsi"
+                            checked>
+                        <label class="form-check-label" for="pepsi">
+                            <h5>Pepsi</h5>
+                        </label>
+                        <br>
+                        <img src="imagens/pepsi-lata-33cl-5sentidos-Photoroom.png" alt="reloadpage" width="130px">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="option" value="Fanta Naranja 300ml"
+                            id="fanta-naranja" checked>
+                        <label class="form-check-label" for="fanta-naranja">
+                            <h5>Fanta Naranja</h5>
+                        </label>
+                        <br>
+                        <img src="imagens/fanta_laranja_lata_350ml_6_und_39_1_ea7725d8f660b15a6ec56f3bf0af2b2b.jpg-Photoroom.png"
+                            alt="reloadpage" width="100px">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="option" value="Zumo Granini Naranja 200ml"
+                            id="granini" checked>
+                        <label class="form-check-label" for="granini">
+                            <h5>Zumo Granini Naranja</h5>
+                        </label>
+                        <br>
+                        <img src="imagens/zumo-de-naranja-Photoroom.png" alt="reloadpage" width="100px">
+                    </div>
+                    <hr>
+                    <p id="errorCheckBoxNull"></p>
+                    <!-- Botão para confirmar artigos -->
+                    <div class="displaydecompra">
+                        <span id="qtdinside"></span>
+                        <input type="button" class="btn btn-primary" id="botaobots" value="Ver carrito &nbsp; 🛒"
+                            onclick="ssd(event)">
+                        <span id="carrito"></span>
+                    </div>
+                </div>
             </form>
-        </div>
-        </div>
-
-        <!--  ESTA COMENTADO PARA ADICIONAR A CONTINUACAO
-        <form action="" method="get" id="dadoscliente">
-            <p>Adicionar Ubicación: </p>
-            <input type="text" name="" id="" placeholder="Nombre:">
-            <input type="text" name="" id="" placeholder="Telefono:">
-            <input type="text" name="" id="" placeholder="Calle:">
-            <input type="text" name="" id="" placeholder="Numero:">
-            <input type="text" name="" id="" placeholder="Info Adicional:">
-            <input type="text" name="" id="" placeholder="Codigo Postal:">
-            <hr>
-            
-        </form>
-        
-        -->
-
-
-
-
         </div>
     </section>
 
-    <div class="right-position">
-        <p>La combinación perfecta <br> de ingredientes frescos y sabores auténticos. <br>Pide ya y desfruta de
-            la
-            mejor!</p>
-
-
-        <!-- Rodapé -->
-        <footer class="footer-real">
-            <div>
-                <p>&copy; The Food</p>
-                <div class="footer-links">
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Política Legal</a>
-                    <a href="#">Ubicación</a>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Resumo do Pedido</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <p>Mídias Sociais</p>
-                <div class="social-icons">
-
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-
+                <div class="modal-body">
+                    <i>Artículos Seleccionados:</i> <i id="articulos"></i>
+                    <hr>
+                    <i>Precio :</i> <i id="precio"></i>
+                    <hr>
+                    <i>Delivery :</i> <i id="delivery"></i>
+                    <hr>
+                    <i>Total:</i> <i id="total"></i>
+                    <hr>
+                    <p>Adicionar Ubicación</p>
+                    <input type="text" name="morada" id="ubicacion" placeholder="Ej: Calle Reversa 25" maxlength="200">
+                </div>
+                <div class="modal-footer">
+                    <div>
+                        <p id="error2"></p>
+                        <hr>
+                    </div>
+                    <hr>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                    <button type="button" class="btn btn-primary" id="continuar-en-whatsapp">Seguir en WhatsApp</button>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
 
-        <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+    <!-- Rodapé -->
+    <footer class="footer-real">
+        <div>
+            <p>&copy; The Food</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Política Legal</a>
+                <a href="#">Ubicación</a>
+            </div>
+            <p>Mídias Sociais</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
 
