@@ -4,7 +4,7 @@
 // funcoes criadas para menu inteligente
 const menu = document.querySelector('.menu')
 var showmenu = document.querySelector('.showmenu');
-var imgt = document.querySelector('#imgt');
+var imgt = document.querySelector('.container');
 
 
 function mostrarmenu() {
